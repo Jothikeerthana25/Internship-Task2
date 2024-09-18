@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            background: url(bck1.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 50px;
+        }
+
+        .container {
+            width: 30%;
+            margin: 0 auto;
+            background:transparent;
+            padding: 100px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        label {
+            font-weight: bold;
+            text-align: left;
+            color:white;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: transparent;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+        .forgot-password {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        h4 {
+            
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Welcome to Login Page</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" placeholder="Enter Password" required>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+
+            <input type="submit" value="Login">
+            <h4><a href="register.html">Do you want to create an account?Sign Up</a></h4>
+        </form>
+    </div>
+</body>
+</html>
